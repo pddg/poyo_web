@@ -1,0 +1,128 @@
+/* navbar */
+#mynav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+}
+
+#mynav-header {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-icon-box {
+    position: relative;
+    margin: 0;
+    width: 23px;
+    height: 30px;
+}
+
+.header-icon {
+    position: relative;
+    height: 100%;
+}
+
+.top_bar,
+.top_bar_disabled,
+.bottom_bar,
+.bottom_bar_disabled {
+    display: block;
+    width: 23px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.top_bar,
+.top_bar_disabled {
+    position: absolute;
+    top: 10px;
+}
+
+.bottom_bar,
+.bottom_bar_disabled {
+    position: absolute;
+    bottom: 10px;
+}
+
+.top_bar_disabled {
+    transform: rotate(24deg);
+    opacity: 0;
+}
+
+.bottom_bar_disabled {
+    transform: rotate(-24deg);
+    opacity: 0;
+}
+
+#mynav-body {
+    position: absolute;
+    width: 100%;
+    top: -400px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.mynav-body-contents {
+    position: relative;
+    width: 100%;
+    padding-left: 60px;
+}
+
+.icon-clickable {
+    position: relative;
+    height: 100%;
+    display: block;
+    pointer-events: all;
+}
+
+.menu-title-box {
+    height: 60px;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    border-left: solid 5px #FF3D7F;
+    color: #fff;
+}
+
+.nav-menu-item {
+    position: relative;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu-item a {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 17px 25px;
+    z-index: 999;
+}
+
+.menu-title-box span {
+    font-size: 1.2em;
+}
+
+@media (max-width: 767px) {
+    .nav-menu-item a {
+        text-align: left;
+    }
+}
