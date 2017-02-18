@@ -42,11 +42,6 @@ body {
     background-color: #e06273;
 }
 
-.nav-menu-item a:hover {
-    background-color: rgba(255, 255, 255, .1);
-    color: #DAF5F5;
-}
-
 /* メイン */
 .container-fluid {
     padding: 0;
